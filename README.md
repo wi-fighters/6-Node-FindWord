@@ -4,14 +4,11 @@
 
 Create a program to search files for a word. The program should accept a word and a file path.
 
--   Make sure to create index.js and require filesystem and path, use createReadStream to read the data.txt file from this repository.
--   Make sure you separate the data in chunks, then find the word 'localhost', and you should also be able to find any word that you will add as an argument.
+-   Make sure to create index.js, use createReadStream to read the data.txt file from this repository.
 
-**Bonus**
+-   Make sure you separate the data in chunks, by default when you run the program to check the data.txt it should find the word 'localhost', and it should give you the amount of times that the word appears in that file. 
 
--   When finding a word or even a space from other files make sure you are finding the correct amount of times is appears.
-
-See following example
+See following example:
 
 ```bash
 $ node index.js
@@ -28,7 +25,7 @@ Number of chunks: 8
 Found 'localhost' 1 times
 ```
 
--   When you pass the argument to the program as expected the output should look like the following:
+-   The program should also be able to find any word that you pass as an argument. The output should look like the following example:
 
 ```bash
 $ node index.js function
@@ -45,8 +42,27 @@ Number of chunks: 8
 Found 'function' 8 times
 ```
 
+-   The program should be able to find words from other files. You will pass the word to find as the first argument and the path to your file as a second argument on your program.  
+
+- Example to find a word from other path: 
+
+```bash
+node index.js individual ../node-PrintKeyboard/README.md 
+Open big file chunk by chunk and count a word
+ 
+Reading chunk 1
+End of data
+Number of chunks: 1
+Found 'individual' 1 times
+```
+
+**Bonus**
+
+-   Run on your program this *" "*. It should find the correct amount of times that a space appears on a file.
+
 ### Rules
 
 -   This is an individual assignment.
 -   Deadline: 30 minutes.
 -   Use **Git properly**
+
