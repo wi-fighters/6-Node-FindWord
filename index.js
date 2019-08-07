@@ -1,16 +1,22 @@
 console.log("Open big file chunk by chunk and count a word");
 console.log(" ");
 const fs = require("fs");
+const path = require("path");
 
-var myReadStream = fs.createReadStream(__dirname + "/readme.txt", "utf8");
+const [
+    word = "localhost",
+    filePath = path.join(__dirname, "readme.txt")
+] = process.argv.slice(2);
+
+var myReadStream = fs.createReadStream(filePath, "utf8");
 
 let i = 0;
 let n = 0;
-let word = "localhost";
+
 myReadStream.on("data", function(chunk) {
     n++;
     if (chunk.includes(word)) i++;
-    console.log(`Chunk received: ${chunk.slice(0, 19)}...`);
+    console.log(`Reading chunk ${n}`);
 });
 myReadStream.on("end", () => {
     console.log("End of data");
