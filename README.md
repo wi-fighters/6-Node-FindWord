@@ -58,7 +58,7 @@ Found 'individual' 1 times
 
 **Bonus**
 
--   Run on your program this **" "** as the word argument. It should find the correct amount of times that a space appears on a file.
+-   Run on your program **" "** as the word argument. It should find the correct amount of times that a space appears on a file.
 
 ### Rules
 
