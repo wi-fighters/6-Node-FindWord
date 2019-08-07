@@ -4,8 +4,9 @@
 
 Create a program to search files for a word. The program should accept a word and a file path.
 
--   Make sure to create index.js and require filesystem and path, use createReadStream to read the data.txt file from this repository.
+-   Make sure to create index.js, use createReadStream to read the data.txt file from this repository.
 -   Make sure you separate the data in chunks, then find the word 'localhost', and you should also be able to find any word that you will add as an argument.
+-   You should be able to find words from other files and you need to be able to provide the path. For example if you need to find a word from the folder you will need to have something like: node index.js WORD PATH file
 
 **Bonus**
 
