@@ -6,9 +6,9 @@ Create a program to search files for a word. The program should accept a word an
 
 -   Make sure to create index.js, use createReadStream to read the data.txt file from this repository.
 
--   Make sure you separate the data in chunks, by default when you run the program to check the data.txt it should find the word 'localhost', and you should also be able to find any word that you will add as an argument.
+-   Make sure you separate the data in chunks, by default when you run the program to check the data.txt it should find the word 'localhost', and it should give you the amount of times that the word appears in that file. 
 
-See following example
+See following example:
 
 ```bash
 $ node index.js
@@ -24,7 +24,8 @@ End of data
 Number of chunks: 8
 Found 'localhost' 1 times
 ```
--   When you pass the argument to the program as expected the output should look like the following:
+
+-   The program should also be able to find any word that you pass as an argument. The output should look like the following example:
 
 ```bash
 $ node index.js function
@@ -41,7 +42,7 @@ Number of chunks: 8
 Found 'function' 8 times
 ```
 
--   The program should be able to find words from other files. It does this if you provide a path as the second argument of the program. 
+-   The program should be able to find words from other files. You will pass the word to find as the first argument and the path to your file as a second argument on your program.  
 
 - Example to find a word from other path: 
 
@@ -56,7 +57,8 @@ Found 'individual' 1 times
 ```
 
 **Bonus**
--   When finding a word or even a space from other files make sure you are finding the correct amount of times is appears.
+
+-   Run on your program this *" "*. It should find the correct amount of times that a space appears on a file.
 
 ### Rules
 
