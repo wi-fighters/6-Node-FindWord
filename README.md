@@ -42,9 +42,7 @@ Number of chunks: 8
 Found 'function' 8 times
 ```
 
--   The program should be able to find words from other files. You will pass the word to find as the first argument and the path to your file as a second argument on your program.  
-
-- Example to find a word from other path: 
+-   The program should be able to find words from other files. If you pass the word to find as the first argument and the path to your file as a second argument on your program, the output will look like the following example: 
 
 ```bash
 node index.js individual ../node-PrintKeyboard/README.md 
@@ -63,5 +61,5 @@ Found 'individual' 1 times
 ### Rules
 
 -   This is an individual assignment.
--   Deadline: 30 minutes.
+-   Deadline: 45 minutes.
 -   Use **Git properly**
