@@ -4,9 +4,9 @@
 
 Create a program to search files for a word. The program should accept a word and a file path.
 
--   Make sure to create index.js, use createReadStream to read the data.txt file from this repository.
+-   Make sure to create `index.js`, use `createReadStream` to read the `data.txt` file from this repository.
 
--   Make sure you separate the data in chunks, by default when you run the program to check the data.txt it should find the word 'localhost', and it should give you the amount of times that the word appears in that file. 
+-   Make sure you separate the data in chunks, by default when you run the program to check the `data.txt` it should find the word `'localhost'`, and it should give you the amount of times that the word appears in that file. 
 
 See following example:
 
@@ -56,7 +56,7 @@ Found 'individual' 1 times
 
 **Bonus**
 
--   Run on your program **" "** as the word argument. It should find the correct amount of times that a space appears on a file.
+-   Run on your program with an empty string (`" "`) as the first argument. It should find the correct amount of times that a space appears on a file.
 
 ### Rules
 
