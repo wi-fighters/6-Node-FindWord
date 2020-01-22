@@ -5,21 +5,21 @@ const path = require("path");
 
 const [
     word = "localhost",
-    filePath = path.join(__dirname, "readme.txt")
-] = process.argv.slice(2);
+    filePath = path.join(__dirname, "data.txt")
+] = process.argv.slice(2); 
 
 var myReadStream = fs.createReadStream(filePath, "utf8");
 
-let i = 0;
 let n = 0;
+let count = 0;
 
 myReadStream.on("data", function(chunk) {
     n++;
-    if (chunk.includes(word)) i++;
+    count += (chunk.split(word).length - 1)
     console.log(`Reading chunk ${n}`);
 });
 myReadStream.on("end", () => {
     console.log("End of data");
     console.log("Number of chunks:", n);
-    console.log(`Found '${word}' ${i} times`);
+    console.log(`Number of occurrences of '${word}' is ${count}`);
 });
